@@ -7,6 +7,7 @@ conn_obj=mysql.connector.connect(
     database="final_project_dec_2024")
 cur_obj=conn_obj.cursor()
 print("testing")
+print("another testing")
 #Define function data_entry_sql
 def data_entry_sql(ph_no,name,address):
     sql = "INSERT INTO cust_basic_details (c_name, c_address, c_phone_number) VALUES (%s, %s, %s)"
